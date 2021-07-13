@@ -1,0 +1,185 @@
+:root{
+    --amarillo : #EAC926;
+    --azul : #03264C;
+    --celeste : #1259C3;
+    --gris-oscuro : #666;
+    --gris-claro : #EBEBEB;
+    --verde : #39B54A;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--gris-claro);
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    width: 90%;
+    margin: auto;
+}
+
+article{
+    margin: 10px;
+    width: 90%;
+    margin: 10px auto;
+    text-align: justify;
+}
+nav{
+    padding-bottom: 10px;
+}
+h2{
+    color: var(--gris-oscuro);
+    margin-bottom: 25px;
+}
+h3{
+    margin-top: 30px;
+}
+
+li{
+    list-style:  none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*HEADER*/
+
+header{
+    background-color: var(--amarillo);
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+header div.burger-menu{
+    background-color: var(--celeste);
+    display: block;
+    color: white;
+    width: 35px;
+    margin: 0 auto;
+    padding: 6px;
+    border-radius: 3px;
+    text-align: center;
+}
+header img{
+    width: 50%;
+}
+header nav img{
+    width: 100%;
+}
+
+header.iconos-header{
+    font-size: 2em;
+}
+/*HEADER*/
+
+/*SECTION*/
+section article div{
+    background-color: #fff;
+    padding: 15px;
+
+}
+section .productos{
+    display: block;
+}
+section .precios{
+    font-size: 18px;
+}
+section .des-des{
+    font-size: 16px;
+}
+section article img{
+    width: 100%;
+}
+/*SECTION*/
+
+/*FOOTER*/
+footer div .fas fa-gift{
+    color: var(--azul);
+}
+
+footer div.footer-cen{
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    margin: auto;
+}
+footer div.footer-cen i{
+    color: var(--celeste);
+    font-size: 2em;
+    margin: 15px;
+}
+/*FOOTER*/
+.linea-gris{
+    border: 1px solid #EBEBEB;
+}
+
+.texto-verde{
+    color: var(--verde);
+}
+
+.fa-truck{
+    font-weight: 900;
+    border: solid var(--verde) .5px;
+    padding: 8px;
+    border-radius: 100%;
+}
+
+
+#banner{
+    width: 100%;
+}
+
+#menu{
+    visibility: hidden;
+}
+#menu ul li {
+    list-style: none;
+}
+/*tablet*/
+@media (min-width: 361px){ 
+    section article div{
+        background-color: #fff;
+        padding: 15px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    #menu{
+        visibility: visible;
+        line-height: 30px;
+    }
+    header div.burger-menu{
+        background-color: var(--celeste);
+        display: inline-block;
+        color: white;
+        margin: 10px;
+        padding: 6px;
+        border-radius: 3px;
+        visibility: hidden;
+    }
+
+}
+/*desktop*/
+
+@media (min-width: 769px){ 
+
+    section article div{
+        background-color: #fff;
+        padding: 15px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    #menu{
+        visibility: visible;
+        margin-left: 10px;
+    }
+    header div.burger-menu{
+        background-color: var(--celeste);
+        display: inline-block;
+        color: white;
+        margin: 10px;
+        padding: 6px;
+        border-radius: 3px;
+    }
+}
